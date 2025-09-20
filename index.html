@@ -1,16 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rudra-P's-website</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+<title>Easy Cooking</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+  
+ <style>
+   
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid #ccc;
+      background-image: url('skyline-car-engine.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff; /* Optional: makes text readable */
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Russo One', sans-serif;
+      font-size: 3em;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #555;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .recipe {
+      background: #fff;
+      border-left: 5px solid #000;
+      padding: 20px 25px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .recipe:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .recipe h2 {
+      font-family: 'Russo One', sans-serif;
+      margin-bottom: 15px;
+      color: #000;
+    }
+
+    .recipe p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #f9f9f9;
+      color: #222;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #ccc;
+      margin-top: 50px;
+    }
+
+    @media(max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 8px 0;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
     <h1>Easy Cooking</h1>
+    <p>Delicious recipes made simple</p>
+  </header>
 
-    <h3>Smothie Bowl (thick)</h3> 
-    <h3>grilled chease</h3>
-   <h2></h2>
+  <nav>
+    <a href="#smoothie">Smoothie Bowl</a>
+    <a href="#toastie">Toastie</a>
+    <a href="#pancakes">Pancakes</a>
+    <a href="#salad">Salad</a>
+  </nav>
+
+  <main>
+    <section id="smoothie" class="recipe">
+      <h2>Smoothie Bowl</h2>
+      <p><strong>Ingredients:</strong> 1/2 cup milk of your choice, 1/2 frozen banana, 5 frozen strawberries, 1/2 cup frozen blueberries.</p>
+      <p><strong>Steps:</strong> Add all ingredients to a blender and blend until smooth with no chunks.</p>
+    </section>
+
+    <section id="toastie" class="recipe">
+      <h2>Toastie</h2>
+      <p><strong>Ingredients:</strong> Cheese, bread, deli meat of choice, leafy greens (optional).</p>
+      <p><strong>Steps:</strong> Butter both sides of two slices of bread. Make two sandwiches with ham and cheese in each. Place in a frying pan and heat gently. Once cheese melts and both sides are golden brown, remove, slice, and serve immediately.</p>
+    </section>
+
+    <section id="pancakes" class="recipe">
+      <h2>Fluffy Pancakes</h2>
+      <p><strong>Ingredients:</strong> 1 cup flour, 1 egg, 1 cup milk, 1 tbsp sugar, 1 tsp baking powder.</p>
+      <p><strong>Steps:</strong> Mix all ingredients, pour onto a hot pan, cook until golden, flip, and serve with syrup.</p>
+    </section>
+
+    <section id="salad" class="recipe">
+      <h2>Quick Salad</h2>
+      <p><strong>Ingredients:</strong> Lettuce, cucumber, tomato, olive oil, salt, pepper.</p>
+      <p><strong>Steps:</strong> Chop veggies, mix in a bowl, drizzle with olive oil, season, and enjoy fresh.</p>
+    </section>
+  </main>
+
+  <footer>
+    Easy Cooking © 2025 | Whaea T
+  </footer>
 </body>
 </html>

@@ -1,7 +1,4 @@
-@font-face {
-    font-family: grafiti ;
-    src: url(Amanzinc-Grafiti.ttf);
-}
-h1{
-    font-family: grafiti ;
+/* Change the color of the title (assuming it's an h1 element) */
+h1 Easy Cooking {
+    color: #080009; /* Replace with your desired color */
 }
